@@ -1,0 +1,49 @@
+<html>
+<head>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://blog-static.cnblogs.com/files/7qin/md5.js"></script>
+    <script type="text/javascript">
+//var password = document.getElementById("password").value;  //将密码md5加密后传到controller
+   function check(){
+      var name=document.getElementById("name").value;
+   var pass=document.getElementById("pass").value;
+   var md5password = hex_md5(pass); 
+   if(name=="codemaohyhemoji" && md5password=="9a91f47c9d2ed710718c67f8c64bc765"){
+   alert("登入成功");
+   var iframe = document.createElement('iframe'); 
+   iframe.src="https://codemaohyhemoji.github.io/home/index.html"; 
+   iframe.height=768
+   iframe.width=1024
+   document.body.appendChild(iframe);
+   }else{
+   alert("用户名或密码错误");
+   
+   }
+   
+   }
+</script>
+
+<form name="f" action="">
+<center>用户名:<INPUT TYPE="text" NAME="" id="name"><br></center>
+<center>密码:<INPUT TYPE="password" NAME="" id="pass"><br></center>
+<center><INPUT TYPE="button" value="登入" onclick="check()"><INPUT TYPE="reset" value="重置"></center>
+</form> 
+</head>
+<body oncontextmenu=self.event.returnValue=false>
+   <script>document.onkeydown = function(){
+
+      if(window.event && window.event.keyCode == 123) {
+          alert("F12被禁用");
+          event.keyCode=0;
+          event.returnValue=false;
+      }
+      if(window.event && window.event.keyCode == 13) {
+          window.event.keyCode = 505;
+      }
+      if(window.event && window.event.keyCode == 8) {
+          alert(str+"\n请使用Del键进行字符的删除操作！");
+          window.event.returnValue=false;
+      }
+  
+  }</script>
+</body>
