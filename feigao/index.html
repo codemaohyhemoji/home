@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>编程猫后援会表情部废稿</title>
+
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+
+<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
+</head>
+<body class="loading">
+
+<main>
+	<div class="frame">
+		<div class="frame__title-wrap">
+			<h1 class="frame__title">请拖动图像条</h1>
+			<div class="frame__links">
+				<a href="">编程猫后援会表情部废稿</a>
+			</div>
+		</div>
+		<h3 class="frame__subtitle">编程猫后援会表情部废稿</h3>
+		<div class="frame__indicator"></div>
+	</div>
+	
+	<div class="strip-outer">
+		<div class="strip-inner">
+			<div class="draggable"></div>
+			<div class="strip">
+				<div class="strip__item">
+					<div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/1.jpg');"></div></div>
+					<span class="strip__item-number"><a class="strip__item-link"><span>01</span></a><span class="strip__item-plus"></span></span>
+				</div>
+				<div class="strip__item">
+					<div class="img-outer img-outer--size-m"><div class="img-inner" style="background-image:url('img/2.png');"></div></div>
+					<span class="strip__item-number"><a class="strip__item-link"><span>02</span></a><span class="strip__item-plus"></span></span>
+				</div>
+				<div class="strip__item">
+					<div class="img-outer img-outer--size-xl"><div class="img-inner" style="background-image:url('img/3.jpg');"></div></div>
+					<span class="strip__item-number"><a class="strip__item-link"><span>03</span></a><span class="strip__item-plus"></span></span>
+				</div>
+			</div><!--/strip-->
+		</div><!--/strip-inner-->
+		<div class="strip-cover">
+			<h2 class="strip-cover__title">编程猫后援会</h2>
+			<span class="strip-cover__subtitle">表情部废稿</span>
+		</div>
+	</div><!--/strip-outer-->
+	
+</main>
+
+<div class="cursor">
+	<div class="cursor__inner cursor__inner--circle">
+		<div class="cursor__side cursor__side--left"></div>
+		<div class="cursor__side cursor__side--right"></div>
+	</div>
+</div>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/draggabilly.pkgd.min.js"></script>
+<script src="js/demo.js"></script>
+<script>
+	// Preload all the images in the page
+	imagesLoaded(document.querySelectorAll('.img-inner'), {background: true}, () => document.body.classList.remove('loading'));
+</script>
+
+</body>
+</html>
