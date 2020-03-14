@@ -50,7 +50,11 @@
                                                                      alert("登入成功，您好，"+name);
                                                                      document.cookie="username="+name;
                                                                      }else{
-                                                                     alert("孩子要不是你输错了要不是你就不在表情部你自己看去吧")
+                                                                      if(name=="lkadmin" && md5password=="c647b9a5ec66ee1f6e19e39025a0f99c"){
+                                                                     alert("登入成功，您好，"+name);
+                                                                     document.cookie="username="+name;
+                                                                     }else{
+                                                                       alert("错了")
                                                                      
                                                                      }
                                                                
