@@ -7,5 +7,4 @@ var username=getCookie("username");
   {
     window.location.href="https://codemaohyhemoji.github.io/home/work.html"
     }
-  }
 
