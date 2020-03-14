@@ -7,7 +7,7 @@ function checkCookie()
   }
   else 
   {
-    window.location.href 1 window.location.href="https://codemaohyhemoji.github.io/home/work.html"
+    window.location.href="https://codemaohyhemoji.github.io/home/work.html"
     }
   }
 }
