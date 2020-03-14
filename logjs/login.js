@@ -1,4 +1,4 @@
- function check(){
+ function login(){
       var name=document.getElementById("name").value;
    var pass=document.getElementById("pass").value;
    var md5password = hex_md5(pass); 
