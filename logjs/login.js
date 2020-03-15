@@ -1,5 +1,7 @@
- function login(){
-      var name=document.getElementById("name").value;
+
+$(function () {
+        window.login= function () {
+          var name=document.getElementById("name").value;
    var pass=document.getElementById("pass").value;
    var md5password = hex_md5(pass); 
    if(name=="laowuzi" && md5password=="fe061ccc834dc8e95a77dec3c775961d"){
@@ -80,3 +82,6 @@
    
    }
    }
+  
+        }
+    })
